@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 자기소개 페이지</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>나의 자기소개 페이지</h1>
+    </header>
+    <section id="about">
+        <h2>안녕하세요, 저는 [이름]입니다.</h2>
+        <p>MBTI: [MBTI 유형]</p>
+        <p>TMI: [TMI 정보]</p>
+    </section>
+    <section id="picture">
+        <h2>사진</h2>
+        <img src="your-image.jpg" alt="나의 사진">
+    </section>
+    <section id="guestbook">
+        <h2>방명록</h2>
+        <form action="submit_guestbook.php" method="post">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="message">메시지:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">방명록 남기기</button>
+        </form>
+    </section>
+</body>
+</html>
+
